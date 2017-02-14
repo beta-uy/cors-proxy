@@ -1,0 +1,10 @@
+version: '2'
+services:
+  nginx:
+    build: .
+    ports:
+      - 8090:80
+    environment:
+      TARGET: https://staging.cryptofacil.com
+      ORIGIN: http://localhost:4000
+
